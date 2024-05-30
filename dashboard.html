@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home_page</title>
+  <!-- Include Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- Include Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <!-- Include Custom CSS -->
+  <link rel="stylesheet" href="dashboard_style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand text-warning" href="#" style="margin-left:10px; margin-top:-2.5px; font-size:22px;">Tutorials</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="dashboard.php" style="color:Yellow;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="learn.html">Learn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quiz.html">Quiz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="feedback.html">Feedback</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="hero-carousle" class="carousel slide" data-bs-ride="carousel" data-interval="5000" data-pause="null">
+    <!-- Carousel indicators and items -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#hero-carousle" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#hero-carousle" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="hero-carousle" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://thumbs.dreamstime.com/b/e-learning-education-internet-technology-webinar-online-courses-concept-121903523.jpg"
+          class="d-block w-100" alt="...">
+        <div class="carousel-caption d-sm-block">
+          <h5>Explore Your skills </h5>
+          <p>Think like a creative person and innovate many things</p>
+          <a href="#" class="btn btn-primary">Explore now</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://img.theweek.in/content/dam/week/news/sci-tech/images/2020/4/23/galaxy.jpg"
+          class="d-block w-100">
+        <div class="carousel-caption d-md-block">
+          <h5>Explore Your skills </h5>
+          <p>Think like a creative person and innovate many things</p>
+          <a href="#" class="btn btn-primary">Explore now</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://st.depositphotos.com/1001201/1423/i/600/depositphotos_14231173-stock-photo-social-network-concept.jpg"
+          class="d-block w-100">
+        <div class="carousel-caption d-md-block">
+          <h5>Explore Your skills </h5>
+          <p>Think like a creative person and innovate many things</p>
+          <a href="#" class="btn btn-primary">Explore now</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousle" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousle" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Vision and Mission Cards -->
+  <br> <br> <br> <br>
+  <div class="card mx-auto" style="border:3px solid orange; border-radius:10px;">
+    <div class="card-body">
+      <center class="text-warning">The Vision</center>
+      <center>To become the Centre of Excellence for technically competent and innovative computer engineers.</center>
+    </div>
+  </div>
+  <br><br><br>
+  <div class="card mx-auto" style="border:3px solid orange; border-radius:10px;">
+    <div class="card-body">
+      <center>Our Methodlogies</center>
+      <center>Way to Success and innovation.</center>
+    </div>
+  </div>
+  <br><br><br>
+
+  <!-- Self Card -->
+  <div class="container-fluid" id="self_card"><br><br>
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <img
+          src="https://burst.shopifycdn.com/photos/business-flatlay-in-india.jpg?width=1200&format=pjpg&exif=1&iptc=1"
+          style="border-radius:10px;" class="learn-img">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="self">
+          <p class="text-primary">
+            “Learning never exhausts the mind.”
+            “For the things we have to learn before we can do them, we learn by doing them.”
+            “Learning is not attained by chance, it must be sought for with ardor and attended to with diligence.”
+            “The beautiful thing about learning is that nobody can take it away from you.”
+          </p>
+        </div>
+      </div>
+    </div>
+    <br><br>
+  </div>
+  <br><br>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <h3>About Us</h3>
+          <p>I was a 3rd year student of the CSE branch and I worked on this mini project.</p>
+        </div>
+        <div class="col-md-3 mx-auto">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>Contact Us</h3>
+          <p>chinnamusidivada <br>visakapatnam<br>Phone:6302xxxxx7<br>Email:vinuvera1234@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End of Footer -->
+
+  <!-- Additional content -->
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width,intial-scale=1">
+    <title>LMS</title>
+    
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Include jQuery Slim, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Include your custom CSS -->
+    <link rel="stylesheet" href="index_css.css">
+</head>
+<body>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include your custom JavaScript -->
+    <script src="script.js"></script>
+    <!-- Navigation section -->
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="index.php">LMS</a>
+            </div>
+            <!-- Navigation menu -->
+            <nav>
+                <div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section><br><br>
+    <!-- Marquee -->
+    <span><marquee>This is learning website opens at all the time.</marquee></span><br><br>
+    <!-- Main content -->
+    <div class="wrapper">
+        <div class="container main">
+            <div class="row" id="row">
+                <!-- Side image column -->
+                <div class="col-md-6 side-image">
+                    <!-- Image -->
+                    <img src="images/white.png" alt="">
+                    <div class="text">
+                        <p>Join the community of developers <i>- modern</i></p>
+                    </div>
+                </div>
+                <!-- Right column with login form -->
+                <div class="col-md-6 right">
+                    <div class="input-box">
+                        <header>User Login</header>
+                        <form onsubmit="validate(); return false;" method="post">
+
+                            <div class="input-field">
+                                <input type="text" class="input" name="email" id="email" autofocus>
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="password" class="input" name="password" id="password" required>
+                                <label for="password">Password</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="submit" class="submit" name="login" value="Sign Up">
+                            </div>
+                        </form>
+                        <div class="signin">
+                            <span>Not have an account? <a href="signup.php">Register here</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+function validate() {
+    // Get the email and password values from the form
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+
+    // Check if email and password match the expected values
+    if (email == "vinuvera1234@gmail.com" && password == "veera") {
+       
+        // Navigate to dashboard.html after the user acknowledges the alert
+        window.location.href = "dashboard.html";
+    } else {
+        // If invalid, show an alert
+        alert("Wrong email or password. Please try again.");
+    }
+}
+
+
+
+    </script>
+</body>
+</html>
